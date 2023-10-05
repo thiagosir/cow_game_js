@@ -1,6 +1,6 @@
 ## Introdução
 
-Este projeto tem como objetivo aprender um pouco mais sobre a lógica de programação por trás do jogo "Pong".
+Este projeto tem como objetivo aprender um pouco mais sobre a lógica de programação por trás do jogo "Atravessando a rua".
 
 ### Como rodar o projeto
 ````
