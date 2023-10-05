@@ -1,4 +1,3 @@
-
 // Função nativa do P5 (https://p5js.org/reference/) <---
 function setup() {
   createCanvas(500, 400);
@@ -12,4 +11,7 @@ function draw() {
   movimentaCarro();
   movimentaAtor();
   voltaPosicao();
+  verificaColisao();
+  marcaPonto();
+  incluiPontos()
 }
