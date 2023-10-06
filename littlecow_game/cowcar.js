@@ -13,5 +13,5 @@ function draw() {
   voltaPosicao();
   verificaColisao();
   marcaPonto();
-  incluiPontos()
+  incluiPontos();
 }

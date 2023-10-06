@@ -1,7 +1,7 @@
 // Código do carro
 
 let xCarros = [600, 600, 600, 600, 600, 600];
-let yCarros = [40, 96, 150, 210, 270, 318];
+let yCarros = [40, 96, 150, 210, 262, 318];
 let velocidadeCarros = [2, 3, 7, 5, 4, 2];
 
 function mostraCarro() {

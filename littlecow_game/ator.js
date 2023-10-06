@@ -12,12 +12,13 @@ function mostraAtor() {
 }
 
 function movimentaAtor() {
-  if (keyIsDown(UP_ARROW)){
+  if (keyIsDown(UP_ARROW)) {
     yAtor -= 3
   }
 
-  if (keyIsDown(DOWN_ARROW)){
-    yAtor += 3
+  if (keyIsDown(DOWN_ARROW)) {
+    if (yAtor < 367)
+      yAtor += 3
   }
 }
 
@@ -26,9 +27,12 @@ function verificaColisao() {
     let distanciaX = xAtor - xCarros[i] - (50 / 2);
     let distanciaY = yAtor - yCarros[i] - (40 / 2);
     let distancia = Math.sqrt(distanciaX * distanciaX + distanciaY * distanciaY);
-    
-    if (distancia < 30) {
+
+    if (distancia < 20) {
       colidiu()
+      if (meusPontos > 0) {
+        meusPontos -= 1
+      }
     }
   }
 }
@@ -37,14 +41,14 @@ function colidiu() {
   return yAtor = 366;
 }
 
-function marcaPonto(){
-  if (yAtor < 15){
+function marcaPonto() {
+  if (yAtor < 15) {
     meusPontos += 1;
     colidiu();
   }
 }
 
-function incluiPontos(){
+function incluiPontos() {
   textAlign(CENTER);
   textSize(25);
   fill(color(255, 240, 60))
